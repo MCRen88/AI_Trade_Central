@@ -19,7 +19,7 @@ Help Traders Make Money Daily and Before & after earnings release/call
     -pay safely and securely using stripe payment module
 ## upload of image of the user
     -upload your picture to the blog
-## User authentication
+## User and password authentication
     -use of latest encryption technology for this site
 ## Password retrieval
     -added feature of password reset
