@@ -14,7 +14,7 @@ Help Traders Make Money Daily and Before & After earnings release/call
 ## Blogging by ticker
     -blog your views on earnings prospects of a company and read what others have to say about company prospects
 ## Charts for 52 technicals for company announcing earnings(added later)
-    -like a pro, use 52 techicals to place your profitable trades
+    -like a pro, use 52 technicals to place your profitable trades
 ## payment using stripe
     -pay safely and securely using stripe payment module
 ## upload of image of the user
