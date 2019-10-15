@@ -1,7 +1,7 @@
 No Commercial copying allowed
 
 # Make Profit by Trading using AI
-Help Traders Make Money Daily and Before & after earnings release/call
+Help Traders Make Money Daily and Before & After earnings release/call
 
 ### Indices, Sectors Sentiments
     -trade indices and sectors based on current earnings sentiment trends of companies in the sector or indices
