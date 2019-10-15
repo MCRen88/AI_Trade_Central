@@ -17,7 +17,7 @@ Help Traders Make Money Daily and Before & After earnings release/call
     -like a pro, use 52 technicals to place your profitable trades
 ## payment using stripe
     -pay safely and securely using stripe payment module
-## upload of image of the user
+## upload your image for other blog users
     -upload your picture to the blog
 ## User and password authentication
     -use of latest encryption technology for this site
