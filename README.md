@@ -21,10 +21,10 @@ Help Traders Make Money Daily and Before & after earnings release/call
     -upload your picture to the blog
 ## User and password authentication
     -use of latest encryption technology for this site
-## Password retrieval
-    -added feature of password reset
+## Password retrieval and reset
+    -added feature of forgot password retreival and reset
 ## Remember login 
-    -save login detail
+    -save securely login detail in your device
 
 
 !['Landing'](screen/landing.png)
