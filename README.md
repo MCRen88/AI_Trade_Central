@@ -4,3 +4,5 @@ Help Traders Make Money Daily, Before and after earnings release/call
 !['pay'](screen/pay.png)
 !['today'](screen/today.png)
 !['dailyml'](screen/dailyml.png)
+!['dailyml'](screen/dailyml.png)
+!['rl'](screen/rl.png)
