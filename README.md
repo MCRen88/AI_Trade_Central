@@ -4,7 +4,7 @@ No Commercial copying allowed
 Help Traders Make Money Daily and Before & after earnings release/call
 
 ### Indices, Sectors Sentiments
-    -trade indices and sectors based on current sentiment trends of companies in the sector or indices
+    -trade indices and sectors based on current earnings sentiment trends of companies in the sector or indices
 ### Daily Earnings call release sentiments by ticker and its past trends
     -trade individual companies before and after earnings release using the trends of sentiments
 ## Daily propritary AI Trading Buy/Sell recommendation(using 7800 features & accuracy 99.5%)
