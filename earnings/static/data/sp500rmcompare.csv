@@ -1,6 +1,6 @@
 Date,Company,Quarter,negative_rating,positive_rating,neutral_rating,polarity_rating,subjectivity_rating
+2019-10-15,C,Q3,Less negative,More positive,Less neutral,Lower polarity,Higher subjectivity
+2019-10-15,JNJ,Q3,More negative ,More positive,Less neutral,Higher polarity,Lower subjectivity
+2019-10-15,UNH,Q3,Less negative,Less positive,More neutral,Lower polarity,Lower subjectivity
 2019-10-11,FAST,Q3,More negative ,Less positive,Less neutral,Lower polarity,Lower subjectivity
 2019-10-10,DAL,Q3,More negative ,More positive,More neutral,Higher polarity,Lower subjectivity
-2019-10-03,COST,Q4,Less negative,More positive,Less neutral,Higher polarity,Higher subjectivity
-2019-10-03,PEP,Q3,Less negative,Less positive,Less neutral,Lower polarity,Lower subjectivity
-2019-10-03,STZ,Q2,Less negative,Less positive,Less neutral,Lower polarity,Lower subjectivity
