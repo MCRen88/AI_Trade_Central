@@ -20,7 +20,7 @@ Help Traders Make Money Daily and Before & After earnings release/call
 ## upload your image for other blog users
     -upload your picture to the blog
 ## User and password authentication
-    -use of latest encryption technology for this site
+    -use of latest encryption 
 ## Password retrieval and reset
     -added feature of forgot password retreival and reset
 ## Remember login 
