@@ -1,7 +1,34 @@
 {% extends "layout.html" %}
 {% block content %}
-    <h1>To help traders to make money on the</h1>
-    	<ul>upcoming earnings estimate</ul>
-    	<ul>earnings call and sentiments</ul>
-    	<ul>insights from earnings call blogs sentiments</ul>
+<div class="jumbotron">
+		<h3 class="display-5">PROFIT FROM AI FOR TRADING</h3>
+        
+        <p class="lead">To access features subscribe for only $9.99</p>
+        <form action="{{ url_for('pay') }}" method="POST">
+          <script
+            src="https://checkout.stripe.com/checkout.js" class="stripe-button"
+            data-key="pk_test_giO1Kioq5GylE2dIQGlEfdHr006dHPTvzL"
+            data-amount="999"
+            data-name="Profit from AI Trade"
+            data-description="The AI Trade"
+            data-image="../static/data/sumbit1.png"
+            data-locale="auto">
+          </script>
+        </form>
+        <br>
+
+        <h5 class="display-6">Earnings Call Sentiments for all Companies</h5>
+        	<ol>Sentiments Trends by major indices and sectors</ol>
+        	<ol>Negative, Positive, Neutral, Polarity and Subjectivity Sentiments</ol>
+        <h5 class="display-6">Daily Earnings Call Sentiments by Company</h5>
+        	<ol>Trends of Sentiments Quarter over Quarter</ol>
+        <h5 class="display-6">A Blog Dedicated to Company Earnings</h5>
+        	<ol>Post and discuss Company earnings prospects by ticker</ol>
+        <h5 class="display-6">Proven AI Trading Buy/Sell Recommendation</h5>
+        	<ol>Gives you heads up on what the algos are upto the next day</ol>
+        	<ol>AI uses 7800 features to predict close to 99.5% accuracy</ol>
+        <h5 class="display-6">Modern Reinforcement Agent Recommended Signals</h5>
+        	<ol>Trade signals for 24 reinforcement agent algorithms</ol>
+ </div>
+    
 {% endblock content %}

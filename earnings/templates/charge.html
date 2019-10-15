@@ -1,0 +1,16 @@
+
+<h2>Please Pay To Continue</h2>
+<form action="{{ url_for('pay') }}" method="POST">
+          <script
+            src="https://checkout.stripe.com/checkout.js" class="stripe-button"
+            data-key="{{ pub_key }}"
+            data-amount="19900"
+            data-name="Demo Site"
+            data-description="Widget"
+            data-image="https://stripe.com/img/documentation/checkout/marketplace.png"
+            data-locale="auto">
+          </script>
+ </form>
+
+
+

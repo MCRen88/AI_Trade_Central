@@ -1,6 +1,6 @@
 Date,Company,Quarter,negative_rating,positive_rating,neutral_rating,polarity_rating,subjectivity_rating
-2019-10-08,DPZ,Q3,More negative ,Less positive,Less neutral,Lower polarity,Lower subjectivity
-2019-10-08,HELE,Q2,More negative ,Less positive,More neutral,Lower polarity,Higher subjectivity
-2019-10-03,COST,Q4,Less negative,More positive,Less neutral,Higher polarity,Higher subjectivity
-2019-10-03,AEHR,Q1,More negative ,Less positive,More neutral,Higher polarity,Higher subjectivity
-2019-10-03,PEP,Q3,Less negative,Less positive,Less neutral,Lower polarity,Lower subjectivity
+2019-10-11,INFY,Q2,More negative ,Less positive,More neutral,Lower polarity,Higher subjectivity
+2019-10-11,FAST,Q3,Less negative,Less positive,Less neutral,Lower polarity,Lower subjectivity
+2019-10-10,DAL,Q3,More negative ,More positive,More neutral,Higher polarity,Lower subjectivity
+2019-10-09,EXFO,Q4,Less negative,Less positive,Less neutral,Lower polarity,Lower subjectivity
+2019-10-09,SAR,Q2,More negative ,Less positive,More neutral,Higher polarity,Higher subjectivity

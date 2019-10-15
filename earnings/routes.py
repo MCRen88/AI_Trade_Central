@@ -8,6 +8,12 @@ from earnings.forms import (RegistrationForm, LoginForm, UpdateAccountForm,
 from earnings.models import User, Post
 from flask_login import login_user, current_user, logout_user, login_required
 from flask_mail import Message
+import stripe
+
+pub_key = 'pk_test_giO1Kioq5GylE2dIQGlEfdHr006dHPTvzL'
+secret_key = 'sk_test_qbHWikrWqzZRpqZZNJd81ICs00nSUtIKvp'
+
+stripe.api_key = secret_key
 
 
 @app.route("/")
@@ -30,6 +36,18 @@ def blog():
     page = request.args.get('page', 1, type=int)
     posts = Post.query.order_by(Post.date_posted.desc()).paginate(page=page, per_page=5)
     return render_template('blog.html', posts=posts)
+
+@app.route("/ml")
+def ml():
+    page = request.args.get('page', 1, type=int)
+    posts = Post.query.order_by(Post.date_posted.desc()).paginate(page=page, per_page=5)
+    return render_template('ml.html', posts=posts)
+
+@app.route("/agent")
+def agent():
+    page = request.args.get('page', 1, type=int)
+    posts = Post.query.order_by(Post.date_posted.desc()).paginate(page=page, per_page=5)
+    return render_template('agent.html', posts=posts)
 
 
 @app.route("/about")
@@ -66,6 +84,23 @@ def login():
         else:
             flash('Login Unsuccessful. Please check email and password', 'danger')
     return render_template('login.html', title='Login', form=form)
+
+
+
+
+@app.route('/pay', methods=['POST'])
+def pay():
+    
+    customer = stripe.Customer.create(email=request.form['stripeEmail'], source=request.form['stripeToken'])
+
+    charge = stripe.Charge.create(
+        customer=customer.id,
+        amount=999,
+        currency='usd',
+        description='The AI Trade'
+    )
+
+    return redirect(url_for('register'))    
 
 
 @app.route("/logout")
