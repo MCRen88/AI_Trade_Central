@@ -8,7 +8,9 @@ Help Traders Make Money Daily and Before & after earnings release/call
 ## Daily propritary AI Trading Buy/Sell recommendation(using 7800 features & accuracy 99.5%)
     -get aheads up on what the algos are upto the next day. Use this knowledge to place profitable trades ahead
 ## 24 Reinforcement Learning Agent Trading Signals
+    -Use 24 reinforcemnt agent trade signals to make profitable trade decisions
 ## Blogging by ticker
+    -blog your views on earnings prospects of a company and read what others have to say about company prospects
 ## Charts for 52 technicals for company announcing earnings(added later)
 ## payment using stripe
 ## upload of image of the user
