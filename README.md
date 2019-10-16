@@ -1,6 +1,6 @@
 No Commercial copying allowed
 
-# Make Profit by Trading using AI
+# Make Trading profit using AI
 Help Traders Make Money Daily and Before & After earnings release/call
 
 ### Indices, Sectors Sentiments
