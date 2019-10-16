@@ -28,7 +28,7 @@ Help Traders Make Money Daily and Before & After earnings release/call
 
 
 !['Landing'](screen/landing.png)
-!['pay'](screen/pay.png)
+!['pay '](screen/pay.png)
 !['today'](screen/today.png)
 !['dailyml'](screen/dailyml.png)
 !['rl'](screen/rl.png)
