@@ -81,4 +81,7 @@ a.article-title:hover {
 
 .jumbotron {
     background-color:#00F3FF; 
+    padding-top: 15px;
+    padding-left: 50px;
+    
 }
