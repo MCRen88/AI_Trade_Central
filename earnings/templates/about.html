@@ -1,8 +1,9 @@
 {% extends "layout.html" %}
 {% block content %}
 <div class="jumbotron">
-		<h3 class="display-5">PROFIT FROM AI FOR TRADING</h3>
-        
+		<h3 class="display-5">MAKE TRADING PROFIT USING AI</h3>
+
+        <p class="lead">Help Traders Make Money daily and before & after earnings calls</p>
         <p class="lead">To access features subscribe for only $9.99</p>
         <form action="{{ url_for('pay') }}" method="POST">
           <script
@@ -17,20 +18,32 @@
         </form>
         <br>
 
-        <h5 class="display-6">Earnings Call Sentiments for all Companies</h5>
-        	<ol>Sentiments Trends by major indices and sectors</ol>
-        	<ol>Negative, Positive, Neutral, Polarity and Subjectivity Sentiments</ol>
-        <h5 class="display-6">Daily Earnings Call Sentiments by Company</h5>
-        	<ol>Trends of Sentiments Quarter over Quarter</ol>
-        <h5 class="display-6">A Blog Dedicated to Company Earnings</h5>
-        	<ol>Post and discuss Company earnings prospects by ticker</ol>
-        <h5 class="display-6">Proven AI Trading Buy/Sell Recommendation</h5>
-        	<ol>Gives you heads up on what the algos are upto the next day</ol>
-        	<ol>AI uses 7800 features to predict close to 99.5% accuracy</ol>
-        <h5 class="display-6">Modern Reinforcement Agent Recommended Signals</h5>
-        	<ol>Trade signals for 24 reinforcement agent algorithms</ol>
-        <h5 class="display-6">52 Technical Charts</h5>
-        	<ol>Trade signals for technical charts</ol>
+        <h5 class="display-6">Indices, Sectors Sentiments</h5>
+        	<ol>trade indices and sectors based on current earnings sentiment trends</ol>
+
+        <h5 class="display-6">Daily Earnings Sentiments and trends by Company after announcement</h5>
+        	<ol>trade individual companies before and after earnings release using the trends and strengths of sentiments</ol>
+
+        <h5 class="display-6">Daily propritary AI Trading Buy/Sell recommendation(using 7800 features & accuracy of 99.5%)</h5>
+        	<ol>get aheads up on what the algos are upto the next day. Use this knowledge to place profitable trades ahead</ol>
+
+        <h5 class="display-6">24 Reinforcement Learning Agent Trading Signals</h5>
+        	<ol>Use 24 reinforcement agent trade signals to make profitable trade decisions</ol>
+
+
+        <h5 class="display-6">Blogging by ticker</h5>
+        	<ol>blog your views on earnings prospects of a company and read what others have to say about company prospects</ol>
+
+
+        <h5 class="display-6">Charts for 52 technicals for company announcing earnings & indices</h5>
+        	<ol>like a pro, use 52 technicals to place your profitable trades</ol>
+
+        <h5 class="display-6">Payment using stripe</h5>
+        	<ol>pay safely and securely using stripe payment module</ol>
+
+
+
+
  </div>
     
 {% endblock content %}
