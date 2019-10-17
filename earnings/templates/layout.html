@@ -35,20 +35,16 @@
               {% if current_user.is_authenticated %}
 
 
-
-                <a class="nav-item nav-link" href="{{ url_for('daily') }}">Todays Earnings Calls</a>
                 <a class="nav-item nav-link" href="{{ url_for('ml') }}">AI Daily Recommendation</a>
+                <a class="nav-item nav-link" href="{{ url_for('daily') }}">Todays Earnings Calls</a>
                 <a class="nav-item nav-link" href="{{ url_for('agent') }}">RI Agent Signals</a>
                 <a class="nav-item nav-link" href="{{ url_for('blog') }}">Blogs</a>
                 <a class="nav-item nav-link" href="{{ url_for('new_post') }}">Post</a>
                 <a class="nav-item nav-link" href="{{ url_for('account') }}">Account</a>
                 <a class="nav-item nav-link" href="{{ url_for('logout') }}">Logout</a>
               {% else %}
-                
-                <a class="nav-item nav-link" href="{{ url_for('about') }}">Todays Earnings Calls</a>
-
-              
                 <a class="nav-item nav-link" href="{{ url_for('about') }}">AI Daily Recommendation</a>
+                <a class="nav-item nav-link" href="{{ url_for('about') }}">Todays Earnings Calls</a>
                 <a class="nav-item nav-link" href="{{ url_for('about') }}">RI Agent Signals</a>
                 <a class="nav-item nav-link" href="{{ url_for('about') }}">Blogs</a>
                 <a class="nav-item nav-link" href="{{ url_for('login') }}">Login</a>
@@ -87,15 +83,15 @@
                 <h3>S&P 500 Earnings</h3>
                 
                 <ul>Negative Sentiments of sp500 Earnings Calls</ul>
-                <img src="static/data/sp500negative.png" alt="Chart" height="200" widthe="200">
+                <img src="static/data/sp500negative.png" alt="Chart" width=100%>
                 <ul>positive Sentiments of sp500 Earnings Calls</ul>
-                <img src="static/data/sp500positive.png" alt="Chart" height="200" widthe="200">
+                <img src="static/data/sp500positive.png" alt="Chart" width=100%>
                 <ul>Neutral Sentiments of sp500 Earnings Calls</ul>
-                <img src="static/data/sp500neutral.png" alt="Chart" height="200" widthe="200">
+                <img src="static/data/sp500neutral.png" alt="Chart" width=100%>
                 <ul>Polarity Sentiments of sp500 Earnings Calls</ul>
-                <img src="static/data/sp500polarity.png" alt="Chart" height="200" widthe="200">
+                <img src="static/data/sp500polarity.png" alt="Chart" width=100%>
                 <ul>Subjectivity Sentiments of sp500 Earnings Calls</ul>
-                <img src="static/data/sp500subjectivity.png" alt="Chart" height="200" widthe="200">
+                <img src="static/data/sp500subjectivity.png" alt="Chart" width=100%>
                 
 
 
