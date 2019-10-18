@@ -1,64 +1,194 @@
 {% extends "layout.html" %}
 {% block content %}
-    <h1>Reinforcement Learning Trading sp500</h1>
+    <h2>Reinforcement Learning Trading signals for sp500</h2>
+    <style>
+        a:: before {
+            content: "\21d2";
+            font-weight: bold;
 
-    	<ul>Turtle Trading agent</ul>
-        <img src="static/data/^GSPCTurtle Trading Agent.png" alt="Chart" height="250" widthe="400">
-    	<ul>Moving Average agent</ul>
-        <img src="static/data/^GSPCMoving Average agent.png" alt="Chart" height="250" widthe="400">
-    	<ul>Signal Rolling agent</ul>
-        <img src="static/data/^GSPCSignal Rolling agent.png" alt="Chart" height="250" widthe="400">
-    	<ul>Policy Gradient agent</ul>
-        <img src="static/data/^GSPCPolicy Gradient agent.png" alt="Chart" height="250" widthe="400">
-    	<ul>Q-learning agent</ul>
-        <img src="static/data/^GSPCQ-learning agent.png" alt="Chart" height="250" widthe="400">
-    	<ul>Evolution Strategy agent</ul>
-        <img src="static/data/^GSPCEvolution Strategy agent.png" alt="Chart" height="250" widthe="400">
-    	<ul>Double Q-learning agent</ul>
-        <img src="static/data/^GSPCDouble Q-learning agent.png" alt="Chart" height="250" widthe="400">
-    	<ul>Recurrent Q-learning agent</ul>
-        <img src="static/data/^GSPCRecurrent Q-learning agent.png" alt="Chart" height="250" widthe="400">
-    	<ul>Double Recurrent Q-learning agent</ul>
-        <img src="static/data/^GSPCSignal Rolling agent.png" alt="Chart" height="250" widthe="400">
-    	<ul>Recurrent Q-learning agent</ul>
-        <img src="static/data/^GSPCSignal Rolling agent.png" alt="Chart" height="250" widthe="400">
-    	<ul>Double Recurrent Q-learning agent</ul>
-        <img src="static/data/^GSPCDouble Recurrent Q-learning agent.png" alt="Chart" height="250" widthe="400">
-    	<ul>Duel Q-learning agent</ul>
-        <img src="static/data/^GSPCSignal Rolling agent.png" alt="Chart" height="250" widthe="400">
-    	<ul>Double Duel Q-learning agent</ul>
-        <img src="static/data/^GSPCDuel Q-learning agent.png" alt="Chart" height="250" widthe="400">
-    	<ul>Duel Recurrent Q-learning agent</ul>
-        <img src="static/data/^GSPCSignal Rolling agent.png" alt="Chart" height="250" widthe="400">
-    	<ul>Double Duel Recurrent Q-learning agent</ul>
-        <img src="static/data/^GSPCSignal Rolling agent.png" alt="Chart" height="250" widthe="400">
-    	<ul>Actor-critic agent</ul>
-        <img src="static/data/^GSPCActor-critic agent.png" alt="Chart" height="250" widthe="400">
-    	<ul>Actor-critic Duel agent</ul>
-        <img src="static/data/^GSPCSignal Rolling agent.png" alt="Chart" height="250" widthe="400">
-    	<ul>Actor-critic Recurrent agent</ul>
-        <img src="static/data/^GSPCSignal Rolling agent.png" alt="Chart" height="250" widthe="400">
-    	<ul>Actor-critic Duel Recurrent agent</ul>
-        <img src="static/data/^GSPCActor-critic Duel Recurrent agent.png" alt="Chart" height="250" widthe="400">
-    	<ul>Curiosity Q-learning agent<</ul>
-        <img src="static/data/^GSPCCuriosity Q-learning agent.png" alt="Chart" height="250" widthe="400">
-    	<ul>Recurrent Curiosity Q-learning agent</ul>
-        <img src="static/data/^GSPCRecurrent Curiosity Q-learning agent.png" alt="Chart" height="250" widthe="400">
-    	<ul>Duel Curiosity Q-learning agent</ul>
-        <img src="static/data/^GSPCDuel Curiosity Q-learning agent.png" alt="Chart" height="250" widthe="400">
-    	<ul>Recurrent Curiosity Q-learning agent</ul>
-        <img src="static/data/^GSPCRecurrent Curiosity Q-learning agent.png" alt="Chart" height="250" widthe="400">
-    	<ul>Duel Curiosity Q-learning agent</ul>
-        <img src="static/data/^GSPCDuel Curiosity Q-learning agent.png" alt="Chart" height="250" widthe="400">
-    	<ul>Neuro-evolution agent</ul>
-        <img src="static/data/^GSPCNeuro-evolution agent.png" alt="Chart" height="250" widthe="400">
-    	<ul>Neuro-evolution with Novelty search agent</ul>
-        <img src="static/data/^GSPCNeuro-evolution with Novelty search agent.png" alt="Chart" height="250" widthe="400">
-    	<ul>ABCD strategy agent</ul>
-        <img src="static/data/^GSPCABCD strategy agent.png" alt="Chart" height="250" widthe="400">
-    	<ul>Deep Evolution Strategy</ul>
-        <img src="static/data/^GSPCDeep Evolution Strategy.png" alt="Chart" height="250" widthe="400">
-    	
+        }
+    </style>
+
+
+    <ol>
+        <li><a href="#section1">Turtle Trading agent </a></li>
+        <li><a href="#section2">Moving Average agent</a></li>
+        <li><a href="#section3">Signal Rolling agent</a></li>
+        <li><a href="#section4">Policy Gradient agent</a></li>
+        <li><a href="#section5">Q-learning agent</a></li>
+        <li><a href="#section6">Evolution Strategy agent</a></li>
+        <li><a href="#section7">Double Q-learning agent</a></li>
+        <li><a href="#section8">Recurrent Q-learning agent</a></li>
+        <li><a href="#section9">Double Recurrent Q-learning agent</a></li>
+        <li><a href="#section10">Duel Q-learning agent</a></li>
+        <li><a href="#section11">Double Duel Q-learning agent</a></li>
+        <li><a href="#section12">Duel Recurrent Q-learning agent</a></li>
+        <li><a href="#section13">Double Duel Recurrent Q-learning agent</a></li>
+        <li><a href="#section14">Actor-critic agent</a></li>
+        <li><a href="#section15">Actor-critic Duel agent</a></li>
+        <li><a href="#section16">Actor-critic Recurrent agent</a></li>
+        <li><a href="#section17">Actor-critic Duel Recurrent agent</a></li>
+        <li><a href="#section18">Curiosity Q-learning agent</a></li>
+        <li><a href="#section19">Recurrent Curiosity Q-learning agent</a></li>
+        <li><a href="#section20">Duel Curiosity Q-learning agent</a></li>
+        <li><a href="#section21">Neuro-evoluton agent</a></li>
+        <li><a href="#section22">Neuro-evoluton with Novelty Search agent</a></li>
+        <li><a href="#section23">ABCD Strategy agent</a></li>
+        <li><a href="#section24">Deep Evolution Strategy</a></li>
+        
+
+
+
+
+
+
+    <ol>
+
+
+    	<h2 id="section1"></h2>
+        <br>
+        <br>
+        <h3>Turtle Trading Agent</h3>
+        <img src="static/data/^GSPCTurtle Trading Agent.png" alt="Chart" height="300", width=100% >
+      
+        <h2 id="section2"></h2>
+        <br>
+        <br>
+        <h3 id="section2">Moving Average agent</h3>
+        <img src="static/data/^GSPCMoving Average agent.png" alt="Chart" height="300", width=100% >
+   
+        <h2 id="section3"></h2>
+        <br>
+        <br>
+    	<h3>Signal Rolling agent</h3>
+        <img src="static/data/^GSPCSignal Rolling agent.png" alt="Chart" height="300", width=100% >
+
+        <h2 id="section4"></h2>
+        <br>
+        <br>
+    	<h3>Policy Gradient agent</he>
+        <img src="static/data/^GSPCPolicy Gradient agent.png" alt="Chart" height="300", width=100% >
+
+
+        <h2 id="section5"></h2>
+        <br>
+        <br>
+    	<h3>Q-learning agent</h3>
+        <img src="static/data/^GSPCQ-learning agent.png" alt="Chart" height="300", width=100% >
+
+        <h2 id="section6"></h2>
+        <br>
+        <br>
+    	<h3>Evolution Strategy agent</h3>
+        <img src="static/data/^GSPCEvolution Strategy agent.png" alt="Chart" height="300", width=100% >
+
+        <h2 id="section7"></h2>
+        <br>
+        <br>
+    	<h3>Double Q-learning agent</h3>
+        <img src="static/data/^GSPCDouble Q-learning agent.png" alt="Chart" height="300", width=100% >
+
+        <h2 id="section8"></h2>
+        <br>
+        <br>
+    	<h3>Recurrent Q-learning agent</h3>
+        <img src="static/data/^GSPCRecurrent Q-learning agent.png" alt="Chart" height="300", width=100% >
+
+        <h2 id="section9"></h2>
+        <br>
+        <br>
+    	<h3>Double Recurrent Q-learning agent</h3>
+        <img src="static/data/^GSPCDouble Recurrent Q-learning agent.png" alt="Chart" height="300", width=100% >
+
+        <h2 id="section10"></h2>
+        <br>
+        <br>
+    	<h3>Duel Q-learning agent</h3>
+        <img src="static/data/^GSPCDuel Q-learning agent.png" alt="Chart" height="300", width=100% >
+
+        <h2 id="section11"></h2>
+        <br>
+        <br>
+    	<h3>Double Duel Q-learning agent</h3>
+        <img src="static/data/^GSPCDouble Duel Q-learning agent.png" alt="Chart" height="300", width=100% >
+
+        <h2 id="section12"></h2>
+        <br>
+        <br>
+    	<h3>Duel Recurrent Q-learning agent</h3>
+        <img src="static/data/^GSPCDuel Recurrent Q-learning agent.png" alt="Chart" height="300", width=100% >
+
+        <h2 id="section13"></h2>
+        <br>
+        <br>
+    	<h3>Double Duel Recurrent Q-learning agent</h3>
+        <img src="static/data/^GSPCDouble Duel Recurrent Q-learning agent.png" alt="Chart" height="300", width=100% >
+
+        <h2 id="section14"></h2>
+        <br>
+        <br>
+    	<h3>Actor-critic agent</h3>
+        <img src="static/data/^GSPCActor-critic agent.png" alt="Chart" height="300", width=100% >
+
+        <h2 id="section15"></h2>
+        <br>
+        <br>
+    	<h3>Actor-critic Duel agent</h3>
+        <img src="static/data/^^GSPCActor-critic Duel agent" alt="Chart" height="300", width=100% >
+
+        <h2 id="section16"></h2>
+        <br>
+        <br>
+    	<h3>Actor-critic Recurrent agent</h3>
+        <img src="static/data/^GSPCActor-critic Recurrent agent.png" alt="Chart" height="300", width=100% >
+
+        <h2 id="section17"></h2>
+        <br>
+        <br>
+    	<h3>Actor-critic Duel Recurrent agent</h3>
+        <img src="static/data/^GSPCActor-critic Duel Recurrent agent.png" alt="Chart" height="300", width=100% >
+
+        <h2 id="section18"></h2>
+        <br>
+        <br>
+    	<h3>Curiosity Q-learning agent</h3>
+        <img src="static/data/^GSPCCuriosity Q-learning agent.png" alt="Chart" height="300", width=100% >
+
+        <h2 id="section19"></h2>
+        <br>
+        <br>
+    	<h3>Recurrent Curiosity Q-learning agent</h3>
+        <img src="static/data/^GSPCRecurrent Curiosity Q-learning agent.png" alt="Chart" height="300", width=100% >
+
+        <h2 id="section20"></h2>
+        <br>
+        <br>
+    	<h3>Duel Curiosity Q-learning agent</h3>
+        <img src="static/data/^GSPCDuel Curiosity Q-learning agent.png" alt="Chart" height="300", width=100% >
+
+        <h2 id="section21"></h2>
+        <br>
+        <br>
+    	<h3>Neuro-evolution agent</h3>
+        <img src="static/data/^GSPCNeuro-evolution agent.png" alt="Chart" height="300", width=100% >
+
+        <h2 id="section22"></h2>
+        <br>
+        <br>
+    	<h3>Neuro-evolution with Novelty search agent</h3>
+        <img src="static/data/^GSPCNeuro-evolution with Novelty search agent.png" alt="Chart" height="300", width=100% >
+
+        <h2 id="section23"></h2>
+        <br>
+        <br>
+    	<h3>ABCD Strategy agent</h3>
+        <img src="static/data/^GSPCABCD Strategy agent.png" alt="Chart" height="300", width=100% >
+
+        <h2 id="section24"></h2>
+        <br>
+        <br>
+    	<h3>Deep Evolution Strategy agent</h3>
+        <img src="static/data/^GSPCDeep Evolution Strategy.png" alt="Chart" height="300", width=100% >
 
 
 {% endblock content %}
