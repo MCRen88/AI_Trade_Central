@@ -37,6 +37,7 @@
 
                 <a class="nav-item nav-link" href="{{ url_for('ml') }}">AI Daily Recommendation</a>
                 <a class="nav-item nav-link" href="{{ url_for('daily') }}">Todays Earnings Calls</a>
+                <a class="nav-item nav-link" href="{{ url_for('information_technology') }}">Sector Sentiments</a>
                 <a class="nav-item nav-link" href="{{ url_for('agent') }}">RI Agent Signals</a>
                 <a class="nav-item nav-link" href="{{ url_for('blog') }}">Blogs</a>
                 <a class="nav-item nav-link" href="{{ url_for('new_post') }}">Post</a>
@@ -45,6 +46,7 @@
               {% else %}
                 <a class="nav-item nav-link" href="{{ url_for('about') }}">AI Daily Recommendation</a>
                 <a class="nav-item nav-link" href="{{ url_for('about') }}">Todays Earnings Calls</a>
+                <a class="nav-item nav-link" href="{{ url_for('about') }}">Sector Sentiments</a>
                 <a class="nav-item nav-link" href="{{ url_for('about') }}">RI Agent Signals</a>
                 <a class="nav-item nav-link" href="{{ url_for('about') }}">Blogs</a>
                 <a class="nav-item nav-link" href="{{ url_for('login') }}">Login</a>
@@ -74,7 +76,9 @@
             <h3>Earnings Related</h3>
             <p class='text-muted'>
               <ul class="list-group">
-                <li class="list-group-item list-group-item-light">Analyst Estimates</li>
+                <li class="list-group-item list-group-item-light"> 
+                  <a href= "https://finance.yahoo.com/quote/GOOG/analysis?p=GOOG" >Analyst Estimates</a>
+                </li>
                 <li class="list-group-item list-group-item-light">Earnings Announcements</li>
                 <li class="list-group-item list-group-item-light">Earnings Calendars</li>
                 <li class="list-group-item list-group-item-light">Brag about your trades</li>
