@@ -7,7 +7,7 @@ Help Traders Make Money Daily and Before & After earnings release/call
     -trade indices and sectors based on current earnings sentiment trends of companies in the sector or indices
 ### Daily Earnings call release sentiments by ticker for all public companies and its past trends
     -trade individual companies before and after earnings release using the trends of earnings call sentiments
-## Daily propritary AI Trading Buy/Sell recommendation(using 7800 features & accuracy 99.5%)
+## Daily proprietary AI Trading Buy/Sell recommendation(using 7800 features & accuracy 99.5%)
     -get aheads up on what the algos are upto the next day. Use this knowledge to place profitable trades ahead
 ## 24 Reinforcement Learning Agent Trading Signals
     -Use 24 reinforcemnt agent trade signals to make profitable trade decisions
