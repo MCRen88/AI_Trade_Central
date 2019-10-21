@@ -32,6 +32,8 @@ Help Traders Make Money Daily and Before & After earnings release/call
 !['today'](screen/today.png)
 !['dailyml'](screen/dailyml.png)
 !['sector_IT'](screen/sector_IT.png)
+!['health_care'](screen/health_care.png)
+!['industrials'](screen/industrials.png)
 !['rl'](screen/rl.png)
 !['blog'](screen/blog.png)
 !['user'](screen/user.png)
