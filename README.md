@@ -1,7 +1,7 @@
 No Commercial copying allowed
 
 # Make Trading profit using AI
-Help Traders Make Money Daily and Before & After earnings release/call with 1000 charts generating trading signals using machine learning.
+Help Traders Make Money Daily and Before & After earnings release/call with 1000 trading signals charts using machine learning.
 
 ### Indices, Sectors Sentiments
     -trade indices and sectors based on current earnings sentiment trends of companies in the sector or indices
