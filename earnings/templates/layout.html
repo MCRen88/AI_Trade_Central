@@ -50,7 +50,7 @@
                 
                      
                 
-                <a class="nav-item nav-link" href="{{ url_for('daily') }}">Todays Earnings Calls</a>
+                <a class="nav-item nav-link" href="{{ url_for('daily') }}">Earnings Calls</a>
 
                 <div class="dropdown">
                             <a class="nav-item nav-link" href="{{ url_for('industrials') }}" class="dropdown-toggle" data-toggle="dropdown">Sector Sentiments</a>
@@ -78,8 +78,22 @@
                 <a class="nav-item nav-link" href="{{ url_for('account') }}">Account</a>
                 <a class="nav-item nav-link" href="{{ url_for('logout') }}">Logout</a>
               {% else %}
-                <a class="nav-item nav-link" href="{{ url_for('about') }}">AI Daily Recommendation</a>
-                <a class="nav-item nav-link" href="{{ url_for('about') }}">Todays Earnings Calls</a>
+
+                <div class="dropdown">
+                            <a class="nav-item nav-link" href="{{ url_for('ml') }}" class="dropdown-toggle" data-toggle="dropdown">AI Recommendations</a>
+                            <div class="dropdown-menu">
+                                <a class="dropdown-item" href="{{ url_for('ml') }}">Next Day</a>
+                                <a class="dropdown-item" href="{{ url_for('ml') }}">Next Week</a>
+                                <a class="dropdown-item" href="{{ url_for('ml') }}">Next Month</a>
+                                <a class="dropdown-item" href="{{ url_for('ml') }}">Next Year</a>
+                        </div>
+                    </div>
+
+
+
+
+
+                <a class="nav-item nav-link" href="{{ url_for('about') }}">Earnings Calls</a>
 
                 <div class="dropdown">
                             <a class="nav-item nav-link" href="{{ url_for('industrials') }}" class="dropdown-toggle" data-toggle="dropdown">Sector Sentiments</a>
