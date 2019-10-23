@@ -1,36 +1,8 @@
 {% extends "layout.html" %}
 {% block content %}
+<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='main.css') }}">
     <h3>Energy Earnings Sentiment Signals</h3>
-    <style>
-        a:: before {
-            content: "\21d2";
-            font-weight: bold;
-        }
-
-        }
-
-        button:hover {
-            background-color: orange;
-        }
-
-        .container {
-            display: flex;
-            flex-wrap: wrap;
-        }
-
-        .container > div {
     
-            padding: 12px;
-            margin: 0px;    
-        }
-        
-        .container1 > div {
-            padding: 20px;
-            margin: 20px; 
-        }
-                
-
-    </style>
     <button>Trade</button>
     
     <div class=container>

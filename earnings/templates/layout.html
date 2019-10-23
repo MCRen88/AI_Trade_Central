@@ -33,24 +33,23 @@
             <!-- Navbar Right Side -->
             <div class="navbar-nav">
               {% if current_user.is_authenticated %}
-               <!--  <div class="bs-example">
-                    <div class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown</a>
-                        <div class="dropdown-menu">
-                            <a href="#" class="dropdown-item">Action</a>
-                            <a href="#" class="dropdown-item">Another action</a>
+
+              <div class="dropdown">
+                            <a class="nav-item nav-link" href="{{ url_for('ml') }}" class="dropdown-toggle" data-toggle="dropdown">AI Recommendations</a>
+                            <div class="dropdown-menu">
+                                <a class="dropdown-item" href="{{ url_for('ml') }}">Next Day</a>
+                                <a class="dropdown-item" href="{{ url_for('ml') }}">Next Week</a>
+                                <a class="dropdown-item" href="{{ url_for('ml') }}">Next Month</a>
+                                <a class="dropdown-item" href="{{ url_for('ml') }}">Next Year</a>
                         </div>
                     </div>
-                </div> -->
-                
-                    
-                    
-                    
 
-                    
+
+
+               
                 
                      
-                <a class="nav-item nav-link" href="{{ url_for('ml') }}">AI Daily Recommendation</a>
+                
                 <a class="nav-item nav-link" href="{{ url_for('daily') }}">Todays Earnings Calls</a>
 
                 <div class="dropdown">
@@ -62,7 +61,6 @@
                                 <a class="dropdown-item" href="{{ url_for('health_care') }}">Health Care</a>
                                 <a class="dropdown-item" href="{{ url_for('consumer_staples') }}">Consumer Staples</a>
                                 <a class="dropdown-item" href="{{ url_for('consumer_discretionary') }}">Consumer Discretionary</a>
-                                <a class="dropdown-item" href="{{ url_for('energy') }}">energy</a>
                                 <a class="dropdown-item" href="{{ url_for('communication_services') }}">Communication Services</a>
                                 <a class="dropdown-item" href="{{ url_for('energy') }}">Energy</a>
                                 <a class="dropdown-item" href="{{ url_for('materials') }}">Materials</a>
@@ -92,7 +90,6 @@
                                 <a class="dropdown-item" href="{{ url_for('health_care') }}">Health Care</a>
                                 <a class="dropdown-item" href="{{ url_for('consumer_staples') }}">Consumer Staples</a>
                                 <a class="dropdown-item" href="{{ url_for('consumer_discretionary') }}">Consumer Discretionary</a>
-                                <a class="dropdown-item" href="{{ url_for('energy') }}">energy</a>
                                 <a class="dropdown-item" href="{{ url_for('communication_services') }}">Communication Services</a>
                                 <a class="dropdown-item" href="{{ url_for('energy') }}">Energy</a>
                                 <a class="dropdown-item" href="{{ url_for('materials') }}">Materials</a>
