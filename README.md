@@ -29,6 +29,7 @@ Help Traders Make Money Daily and Before & After earnings release/call with over
 
 !['Landing'](screen/landing.png)
 !['pay '](screen/pay.png)
+!['sector_dropdown '](screen/sector_drop.png)
 !['today'](screen/today.png)
 !['dailyml'](screen/dailyml.png)
 !['sector_IT'](screen/sector_IT.png)
