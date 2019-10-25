@@ -254,6 +254,56 @@ def reset_token(token):
 
 @app.route("/information_technology")
 def information_technology():
-    page = request.args.get('page', 1, type=int)
-    posts = Post.query.order_by(Post.date_posted.desc()).paginate(page=page, per_page=5)
-    return render_template('information_technology.html', posts=posts)
+    return render_template('information_technology.html')
+
+@app.route("/industrials")
+def industrials():
+    return render_template('industrials.html')
+
+
+@app.route("/health_care")
+def health_care():
+    return render_template('health_care.html')
+
+@app.route("/communication_services")
+def communication_services():
+    return render_template('communication_services.html')
+
+@app.route("/consumer_discretionary")
+def consumer_discretionary():
+    return render_template('consumer_discretionary.html')
+
+@app.route("/consumer_staples")
+def consumer_staples():
+    return render_template('consumer_staples.html')
+
+@app.route("/energy")
+def energy():
+    return render_template('energy.html')
+
+@app.route("/financials")
+def financials():
+    return render_template('financials.html')
+
+@app.route("/materials")
+def materials():
+    return render_template('materials.html')
+
+@app.route("/real_estate")
+def real_estate():
+    return render_template('real_estate.html')
+
+@app.route("/utilities")
+def utilities():
+    return render_template('utilities.html')
+
+@app.route("/technicals")
+def technicals():
+    indicators=['SMA','EMA','WMA','DEMA','TEMA','TRIMA','KAMA','MAMA','T3','MACD','MACDEXT','STOCH','STOCHF', 'RSI',
+            'STOCHRSI','WILLR','ADX','ADXR','APO','PPO','MOM','BOP','CCI','CMO','ROC','ROCR','AROON','AROONOSC','MFI',
+            'TRIX','ULTOSC','DX','MINUS_DI','PLUS_DI','MINUS_DM','PLUS_DM','BBANDS','MIDPOINT','MIDPRICE','SAR','TRANGE',
+            'ATR','NATR','AD','ADOSC','OBV','HT_TRENDLINE','HT_SINE','HT_TRENDMODE','HT_DCPERIOD','HT_DCPHASE','HT_PHASOR'
+           ]
+    return render_template('technicals.html', indicators=indicators)
+
+
