@@ -1,148 +1,81 @@
 {% extends "layout.html" %}
 {% block content %}
-<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='main.css') }}">
+<!-- <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='main.css') }}"> -->
     <h3>Consumer Staples Earnings Sentiment Signals</h3>
     
-    <button>Trade</button>
+    <button type="button" class="btn btn-success">Trade</button>
+
+    <div class=container2>
+    <div class="row">
+     {% for cs in css %}
+     <div class="col-lg-3 col-sm-6">
+               
+                <div><a href=#{{ loop.index }}>{{cs}}</a></div>
+            </div>
+           
+     {% endfor %}
+     </div>
+     </div>
     
-    <div class=container>
-       
-        <div><li><a href="#section1">Packaged Foods & Meats</a></li></div>
-        <div><li><a href="#section2">Household Products</a></li></div>
-        <div><li><a href="#section3">Soft Drinks</a></li></div>
-        <div><li><a href="#section4">Personal Products</a></li></div>
-        <div><li><a href="#section5">Distillers & Vintners</a></li></div>
-        <div><li><a href="#section6">Tobacco</a></li></div>
-        <div><li><a href="#section7">Food Distributors</a></li></div>
-        <div><li><a href="#section8">Drug Retail</a></li></div>
-        <div><li><a href="#section9">Hypermarkets & Super Centers</a></li></div>
-        <div><li><a href="#section10">Brewers</a></li></div>
-        <div><li><a href="#section11">Food Retail</a></li></div>
-        <div><li><a href="#section12">Agricultural Products</a></li></div>
-        
-
-        </div>
-      
-
         <div class=container1>
-
-        <div id="section1">
-            <br>
-            <br>
-            <br>
-        <h3>Packaged Foods & Meats</h3>
-        <img src="static/data/consumer_staples/Packaged Foods & Meats_positve.png" alt="Chart" width=100% >
-        <img src="static/data/consumer_staples/Packaged Foods & Meats_negative.png" alt="Chart" width=100% >
-        </div>
-      
-        <div id="section2">
-            <br>
-            <br>
-            <br>
-        <h3>Household Products</h3>
-        <img src="static/data/consumer_staples/Household Products_positve.png" alt="Chart" width=100% >
-        <img src="static/data/consumer_staples/Household Products_negative.png" alt="Chart" width=100%  >
-        </div>
-   
-        <div id="section3">
-            <br>
-            <br>
-            <br>
-    	<h3>Soft Drinks</h3>
-        <img src="static/data/consumer_staples/Soft Drinks_positve.png" alt="Chart" width=100% >
-        <img src="static/data/consumer_staples/Soft Drinks_negative.png" alt="Chart" width=100% >
-        </div>
-
-        <div id="section4">
-            <br>
-            <br>
-            <br>
-    	<h3>Personal Products</he>
-        <img src="static/data/consumer_staples/Personal Products_positve.png" alt="Chart" width=100% >
-        <img src="static/data/consumer_staples/Personal Products_negative.png" alt="Chart" width=100% >
-        </div>
-
-
-        <div id="section5">
-            <br>
-            <br>
-            <br>
-    	<h3>Distillers & Vintners</h3>
-        <img src="static/data/consumer_staples/Distillers & Vintners_positve.png" alt="Chart" width=100% >
-        <img src="static/data/consumer_staples/Distillers & Vintners_negative.png" alt="Chart" width=100%  >
-        </div>
-
-
-        <div id="section6">
-            <br>
-            <br>
-            <br>
-    	<h3>Tobacco</h3>
-        <img src="static/data/consumer_staples/Tobacco_positve.png" alt="Chart" width=100% >
-        <img src="static/data/consumer_staples/Tobacco_negative.png" alt="Chart" width=100%  >
-        </div>
-
-        <div id="section7">
-            <br>
-            <br>
-            <br>
-    	<h3>Food Distributors</h3>
-        <img src="static/data/consumer_staples/Food Distributors_positve.png" alt="Chart" width=100% >
-        <img src="static/data/consumer_staples/Food Distributors_negative.png" alt="Chart" width=100% >
-        </div>
-
-        <div id="section8">
-            <br>
-            <br>
-            <br>
-    	<h3>Drug Retail</h3>
-        <img src="static/data/consumer_staples/Drug Retail_positve.png" alt="Chart" width=100%  >
-        <img src="static/data/consumer_staples/Drug Retail_negative.png" alt="Chart" width=100% >
-        </div>
-
-        <div id="section9">
-            <br>
-            <br>
-            <br>
-    	<h3>Hypermarkets & Super Centers</h3>
-        <img src="static/data/consumer_staples/Hypermarkets & Super Centers_positve.png" alt="Chart" width=100% >
-
-        <img src="static/data/consumer_staples/Hypermarkets & Super Centers_negative.png" alt="Chart" width=100%  >
-        </div>
-       
-
-        <div id="section10">
-            <br>
-            <br>
-            <br>
-    	<h3>Brewers</h3>
-        <img src="static/data/consumer_staples/Brewers_positve.png" alt="Chart" width=100%  >
-        <img src="static/data/consumer_staples/Brewers_negative.png" alt="Chart" width=100%   >
-        </div>
-
-
-        <div id="section11">
-            <br>
-            <br>
-            <br>
-        <h3>Food Retail</h3>
-        <img src="static/data/consumer_staples/Food Retail_positve.png" alt="Chart" width=100%  >
-        <img src="static/data/consumer_staples/Food Retail_negative.png" alt="Chart" width=100%   >
-        </div>
-
-
-        <div id="section12">
-            <br>
-            <br>
-            <br>
-        <h3>Agricultural Products</h3>
-        <img src="static/data/consumer_staples/Agricultural Products_positve.png" alt="Chart" width=100%  >
-        <img src="static/data/consumer_staples/Agricultural Products_negative.png" alt="Chart" width=100%   >
-        </div>
-
-        
-
-    </div>
-
-
+        {% for cs in css %}
+        <div id={{ loop.index }}><br><br><br>
+        <h3>{{cs}} </h3>
+        <img src="\static\data\consumer_staples\{{cs}}_positive.png" alt="Chart" width=100% >
+        <img src="\static\data\consumer_staples\{{cs}}_negative.png" alt="Chart" width=100% >
+         </div>
+        {% endfor %}
+         
+         </div>
 {% endblock content %}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

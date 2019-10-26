@@ -1,85 +1,81 @@
 {% extends "layout.html" %}
 {% block content %}
-<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='main.css') }}">
+<!-- <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='main.css') }}"> -->
     <h3>Energy Earnings Sentiment Signals</h3>
     
-    <button>Trade</button>
+    <button type="button" class="btn btn-success">Trade</button>
+
+    <div class=container2>
+    <div class="row">
+     {% for en in ens %}
+     <div class="col-lg-3 col-sm-6">
+               
+                <div><a href=#{{ loop.index }}>{{en}}</a></div>
+            </div>
+           
+     {% endfor %}
+     </div>
+     </div>
     
-    <div class=container>
-       
-        <div><li><a href="#section1">Oil & Gas Exploration & Production</a></li></div>
-        <div><li><a href="#section2">Oil & Gas Equipment & Services</a></li></div>
-        <div><li><a href="#section3">Oil & Gas Refining & Marketing</a></li></div>
-        <div><li><a href="#section4">Oil & Gas Storage & Transportation</a></li></div>
-        <div><li><a href="#section5">Integrated Oil & Gas</a></li></div>
-        <div><li><a href="#section6">Oil & Gas Drilling</a></li></div>
-        
-        
-
-        </div>
-      
-
         <div class=container1>
-
-        <div id="section1">
-            <br>
-            <br>
-            <br>
-        <h3>Oil & Gas Exploration & Production</h3>
-        <img src="static/data/energy/Oil & Gas Exploration & Production_positve.png" alt="Chart" width=100% >
-        <img src="static/data/energy/Oil & Gas Exploration & Production_negative.png" alt="Chart" width=100% >
-        </div>
-      
-        <div id="section2">
-            <br>
-            <br>
-            <br>
-        <h3>Oil & Gas Equipment & Services</h3>
-        <img src="static/data/energy/Oil & Gas Equipment & Services_positve.png" alt="Chart" width=100% >
-        <img src="static/data/energy/Oil & Gas Equipment & Services_negative.png" alt="Chart" width=100%  >
-        </div>
-   
-        <div id="section3">
-            <br>
-            <br>
-            <br>
-    	<h3>Oil & Gas Refining & Marketing</h3>
-        <img src="static/data/energy/Oil & Gas Refining & Marketing_positve.png" alt="Chart" width=100% >
-        <img src="static/data/energy/Oil & Gas Refining & Marketing_negative.png" alt="Chart" width=100% >
-        </div>
-
-        <div id="section4">
-            <br>
-            <br>
-            <br>
-    	<h3>Oil & Gas Storage & Transportation</he>
-        <img src="static/data/energy/Oil & Gas Storage & Transportation_positve.png" alt="Chart" width=100% >
-        <img src="static/data/energy/Oil & Gas Storage & Transportation_negative.png" alt="Chart" width=100% >
-        </div>
-
-
-        <div id="section5">
-            <br>
-            <br>
-            <br>
-    	<h3>Integrated Oil & Gas</h3>
-        <img src="static/data/energy/Integrated Oil & Gas_positve.png" alt="Chart" width=100% >
-        <img src="static/data/energy/Integrated Oil & Gas_negative.png" alt="Chart" width=100%  >
-        </div>
-
-
-        <div id="section6">
-            <br>
-            <br>
-            <br>
-    	<h3>Oil & Gas Drilling</h3>
-        <img src="static/data/energy/Oil & Gas Drilling_positve.png" alt="Chart" width=100% >
-        <img src="static/data/energy/Oil & Gas Drilling_negative.png" alt="Chart" width=100%  >
-        </div>
-
-        
-
-    </div>
-
-
+        {% for en in ens %}
+        <div id={{ loop.index }}><br><br><br>
+        <h3>{{en}} </h3>
+        <img src="\static\data\energy\{{en}}_positive.png" alt="Chart" width=100% >
+        <img src="\static\data\energy\{{en}}_negative.png" alt="Chart" width=100% >
+         </div>
+        {% endfor %}
+         
+         </div>
 {% endblock content %}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
