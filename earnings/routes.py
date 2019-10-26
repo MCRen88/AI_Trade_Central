@@ -274,19 +274,30 @@ def health_care():
 
 @app.route("/communication_services")
 def communication_services():
-    return render_template('communication_services.html')
+    coms=['Interactive Media & Services', 'Broadcasting', 'Publishing', 'Integrated Telecommunication Services', 'Interactive Home Entertainment', 
+            'Cable & Satellite', 'Wireless Telecommunication Services', 'Movies & Entertainment', 'Advertising']
+    return render_template('communication_services.html', coms=coms)
 
 @app.route("/consumer_discretionary")
 def consumer_discretionary():
-    return render_template('consumer_discretionary.html')
+    cds=['Internet & Direct Marketing Retail', 'Specialty Stores', 'Automobile Manufacturers', 'Hotels, Resorts & Cruise Lines', 'Household Appliances',
+     'Homebuilding', 'Apparel, Accessories & Luxury Goods', 'Restaurants', 'Computer & Electronics Retail', 'General Merchandise Stores', 
+     'Specialized Consumer Services', 'Apparel Retail', 'Home Improvement Retail', 'Department Stores', 'Automotive Retail', 
+     'Auto Parts & Equipment', 'Home Furnishings', 'Motorcycle Manufacturers', 'Casinos & Gaming', 'Housewares & Specialties', 
+     'Consumer Electronics', 'Distributors', 'Leisure Products']
+    return render_template('consumer_discretionary.html', cds=cds)
 
 @app.route("/consumer_staples")
 def consumer_staples():
-    return render_template('consumer_staples.html')
+    css=['Packaged Foods & Meats','Soft Drinks','Tobacco','Distillers & Vintners','Hypermarkets & Super Centers','Food Retail',
+        'Personal Products','Food Distributors','Household Products','Brewers','Drug Retail','Agricultural Products']
+    return render_template('consumer_staples.html', css=css)
 
 @app.route("/energy")
 def energy():
-    return render_template('energy.html')
+    ens=['Oil & Gas Exploration & Production', 'Oil & Gas Refining & Marketing', 'Oil & Gas Equipment & Services', 
+        'Oil & Gas Storage & Transportation', 'Oil & Gas Drilling', 'Integrated Oil & Gas']
+    return render_template('energy.html', ens=ens)
 
 @app.route("/financials")
 def financials():
@@ -297,15 +308,20 @@ def financials():
 
 @app.route("/materials")
 def materials():
-    return render_template('materials.html')
+    mats=['Paper Packaging', 'Copper', 'Specialty Chemicals', 'Steel', 'Metal & Glass Containers', 'Fertilizers & Agricultural Chemicals', 
+    'Construction Materials', 'Gold', 'Industrial Gases', 'Diversified Chemicals']
+    return render_template('materials.html', mats=mats)
 
 @app.route("/real_estate")
 def real_estate():
-    return render_template('real_estate.html')
+    res=['Residential REITs', 'Office REITs', 'Industrial REITs', 'Hotel & Resort REITs', 'Health Care REITs', 'Specialized REITs', 
+    'Retail REITs', 'Real Estate Services']
+    return render_template('real_estate.html', res=res)
 
 @app.route("/utilities")
 def utilities():
-    return render_template('utilities.html')
+    utis=['Multi-Utilities', 'Electric Utilities', 'Water Utilities', 'Gas Utilities', 'Independent Power Producers & Energy Traders']
+    return render_template('utilities.html', utis=utis)
 
 @app.route("/technicals")
 def technicals():
