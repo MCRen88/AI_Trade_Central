@@ -254,7 +254,10 @@ def reset_token(token):
 
 @app.route("/information_technology")
 def information_technology():
-    return render_template('information_technology.html')
+    its=['Semiconductors', 'Data Processing & Outsourced Services','Communications Equipment','Electronic Components','Semiconductor Equipment',
+        'IT Consulting & Other Services','Application Software','Technology Hardware, Storage & Peripherals','Electronic Equipment & Instruments',
+        'Internet Services & Infrastructure','Electronic Manufacturing Services','Systems Software']
+    return render_template('information_technology.html', its=its)
 
 @app.route("/industrials")
 def industrials():
