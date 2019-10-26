@@ -258,7 +258,11 @@ def information_technology():
 
 @app.route("/industrials")
 def industrials():
-    return render_template('industrials.html')
+    inds=['Industrial Machinery','Aerospace & Defense', 'Airlines','Industrial Conglomerates','Environmental & Facilities Services',
+            'Building Products', 'Construction Machinery & Heavy Trucks','Research & Consulting Services','Railroads',
+            'Trading Companies & Distributors', 'Trucking', 'Diversified Support Services', 'Air Freight & Logistics',
+            'Agricultural & Farm Machinery','Construction & Engineering', 'Electrical Components & Equipment','Human Resource & Employment Services']
+    return render_template('industrials.html', inds=inds)
 
 
 @app.route("/health_care")
@@ -283,7 +287,10 @@ def energy():
 
 @app.route("/financials")
 def financials():
-    return render_template('financials.html')
+    fins=['Consumer Finance', 'Investment Banking & Brokerage', 'Asset Management & Custody Banks', 'Financial Exchanges & Data', 'Regional Banks',
+     'Diversified Banks', 'Life & Health Insurance', 'Insurance Brokers', 'Multi-line Insurance', 'Property & Casualty Insurance', 
+     'Thrifts & Mortgage Finance', 'Reinsurance']
+    return render_template('financials.html', fins=fins)
 
 @app.route("/materials")
 def materials():
