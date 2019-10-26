@@ -1,99 +1,81 @@
 {% extends "layout.html" %}
 {% block content %}
-<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='main.css') }}">
+<!-- <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='main.css') }}"> -->
     <h3>Materials Earnings Sentiment Signals</h3>
     
-    <button>Trade</button>
+    <button type="button" class="btn btn-success">Trade</button>
+
+    <div class=container2>
+    <div class="row">
+     {% for mat in mats %}
+     <div class="col-lg-3 col-sm-6">
+               
+                <div><a href=#{{ loop.index }}>{{mat}}</a></div>
+            </div>
+           
+     {% endfor %}
+     </div>
+     </div>
     
-    <div class=container>
-       
-        <div><li><a href="#section1">Specialty Chemicals</a></li></div>
-        <div><li><a href="#section2">Paper Packaging</a></li></div>
-        <div><li><a href="#section3">Fertilizers & Agricultural Chemicals</a></li></div>
-        <div><li><a href="#section4">Construction Materials</a></li></div>
-        <div><li><a href="#section5">Metal & Glass Containers</a></li></div>
-        <div><li><a href="#section6">Copper</a></li></div>
-        <div><li><a href="#section7">Steel</a></li></div>
-        <div><li><a href="#section8">Gold</a></li></div>
-        <div><li><a href="#section9">Industrial Gases</a></li></div>
-        <div><li><a href="#section10">Diversified Chemicals</a></li></div>
-        
-        
-
-        </div>
-      
-
         <div class=container1>
-
-        <div id="section1"><br><br><br>
-        <h3>Specialty Chemicals</h3>
-        <img src="static/data/materials/Specialty Chemicals_positve.png" alt="Chart" width=100% >
-        <img src="static/data/materials/Specialty Chemicals_negative.png" alt="Chart" width=100% >
-        </div>
-      
-        <div id="section2"><br><br><br>
-        <h3>Paper Packaging</h3>
-        <img src="static/data/materials/Paper Packaging_positve.png" alt="Chart" width=100% >
-        <img src="static/data/materials/Paper Packaging_negative.png" alt="Chart" width=100%  >
-        </div>
-   
-        <div id="section3"><br><br><br>
-    	<h3>Fertilizers & Agricultural Chemicals</h3>
-        <img src="static/data/materials/Fertilizers & Agricultural Chemicals_positve.png" alt="Chart" width=100% >
-        <img src="static/data/materials/Fertilizers & Agricultural Chemicals_negative.png" alt="Chart" width=100% >
-        </div>
-
-        <div id="section4"><br><br><br>
-    	<h3>Construction Materials</he>
-        <img src="static/data/materials/Construction Materials_positve.png" alt="Chart" width=100% >
-        <img src="static/data/materials/Construction Materials_negative.png" alt="Chart" width=100% >
-        </div>
-
-
-        <div id="section5"><br><br><br>
-    	<h3>Metal & Glass Containers</h3>
-        <img src="static/data/materials/Metal & Glass Containers_positve.png" alt="Chart" width=100% >
-        <img src="static/data/materials/Metal & Glass Containers_negative.png" alt="Chart" width=100%  >
-        </div>
-
-
-        <div id="section6"><br><br><br>
-    	<h3>Copper</h3>
-        <img src="static/data/materials/Copper_positve.png" alt="Chart" width=100% >
-        <img src="static/data/materials/Copper_negative.png" alt="Chart" width=100%  >
-        </div>
-
-        <div id="section7"><br><br><br>
-    	<h3>Steel</h3>
-        <img src="static/data/materials/Steel_positve.png" alt="Chart" width=100% >
-        <img src="static/data/materials/Steel_negative.png" alt="Chart" width=100% >
-        </div>
-
-        <div id="section8"><br><br><br>
-    	<h3>Gold</h3>
-        <img src="static/data/materials/Gold_positve.png" alt="Chart" width=100%  >
-        <img src="static/data/materials/Gold_negative.png" alt="Chart" width=100% >
-        </div>
-
-        <div id="section9"><br><br><br>
-    	<h3>Industrial Gases</h3>
-        <img src="static/data/materials/Industrial Gases_positve.png" alt="Chart" width=100% >
-
-        <img src="static/data/consumer_staples/Industrial Gases_negative.png" alt="Chart" width=100%  >
-        </div>
-       
-
-        <div id="section10"><br><br><br>
-    	<h3>Diversified Chemicals</h3>
-        <img src="static/data/consumer_staples/Diversified Chemicals_positve.png" alt="Chart" width=100%  >
-        <img src="static/data/consumer_staples/Diversified Chemicals_negative.png" alt="Chart" width=100%   >
-        </div>
-
-
-
-        
-
-    </div>
-
-
+        {% for mat in mats %}
+        <div id={{ loop.index }}><br><br><br>
+        <h3>{{mat}} </h3>
+        <img src="\static\data\materials\{{mat}}_positive.png" alt="Chart" width=100% >
+        <img src="\static\data\materials\{{mat}}_negative.png" alt="Chart" width=100% >
+         </div>
+        {% endfor %}
+         
+         </div>
 {% endblock content %}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

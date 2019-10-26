@@ -1,62 +1,81 @@
 {% extends "layout.html" %}
 {% block content %}
-<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='main.css') }}">
+<!-- <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='main.css') }}"> -->
     <h3>Utilities Earnings Sentiment Signals</h3>
     
-    <button>Trade</button>
-    
-    <div class=container>
-       
-        <div><li><a href="#section1">Electric Utilities</a></li></div>
-        <div><li><a href="#section2">Multi-Utilities</a></li></div>
-        <div><li><a href="#section3">Independent Power Producers & Energy Traders</a></li></div>
-        <div><li><a href="#section4">Water Utilities</a></li></div>
-        <div><li><a href="#section5">Gas Utilities</a></li></div>
-    
-        
+    <button type="button" class="btn btn-success">Trade</button>
 
-        </div>
-      
-
+    <div class=container2>
+    <div class="row">
+     {% for uti in utis %}
+     <div class="col-lg-3 col-sm-6">
+               
+                <div><a href=#{{ loop.index }}>{{uti}}</a></div>
+            </div>
+           
+     {% endfor %}
+     </div>
+     </div>
+    
         <div class=container1>
-
-        <div id="section1"><br><br><br>
-        <h3>Electric Utilities</h3>
-        <img src="static/data/Utilities/Electric Utilities_positve.png" alt="Chart" width=100% >
-        <img src="static/data/Utilities/Electric Utilities_negative.png" alt="Chart" width=100% >
-        </div>
-      
-        <div id="section2"><br><br><br>
-        <h3>Multi-Utilities</h3>
-        <img src="static/data/Utilities/Multi-Utilities_positve.png" alt="Chart" width=100% >
-        <img src="static/data/Utilities/Multi-Utilities_negative.png" alt="Chart" width=100%  >
-        </div>
-   
-        <div id="section3"><br><br><br>
-    	<h3>Independent Power Producers & Energy Traders</h3>
-        <img src="static/data/Utilities/Independent Power Producers & Energy Traders_positve.png" alt="Chart" width=100% >
-        <img src="static/data/Utilities/Independent Power Producers & Energy Traders_negative.png" alt="Chart" width=100% >
-        </div>
-
-        <div id="section4"><br><br><br>
-    	<h3>Water Utilities</he>
-        <img src="static/data/Utilities/Water Utilities_positve.png" alt="Chart" width=100% >
-        <img src="static/data/Utilities/Water Utilities_negative.png" alt="Chart" width=100% >
-        </div>
-
-
-        <div id="section5"><br><br><br>
-    	<h3>Gas Utilities</h3>
-        <img src="static/data/Utilities/Gas Utilities_positve.png" alt="Chart" width=100% >
-        <img src="static/data/Utilities/Gas Utilities_negative.png" alt="Chart" width=100%  >
-        </div>
-
-
-        
-
-        
-
-    </div>
-
-
+        {% for uti in utis %}
+        <div id={{ loop.index }}><br><br><br>
+        <h3>{{uti}} </h3>
+        <img src="\static\data\utilities\{{uti}}_positive.png" alt="Chart" width=100% >
+        <img src="\static\data\utilities\{{uti}}_negative.png" alt="Chart" width=100% >
+         </div>
+        {% endfor %}
+         
+         </div>
 {% endblock content %}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

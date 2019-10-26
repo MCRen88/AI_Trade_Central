@@ -1,36 +1,56 @@
 {% extends "layout.html" %}
 {% block content %}
-<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='main.css') }}">
+<!-- <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='main.css') }}"> -->
+<style>
+    .grid {
+      background-color: green;
+      display: grid;
+      padding: 10px;
+      grid-column-gap: 10px;
+      grid-row-gap: 10px;
+      grid-template-columns: auto auto auto;
+}
+
+.grid-item {
+      background-color: white;
+      font-size: 10px;
+      padding:  10px;
+      text-align: center;
+}
+
+</style>
+
+
     <h2>Reinforcement Learning Trading signals</h2>
     
-    <button>Trade</button>
+    <button type="button" class="btn btn-success">Trade</button><br><br>
     
-    <div class=container>
+    <div class="grid">
        
-        <div><li><a href="#section1">Turtle Trading agent </a></li></div>
-        <div><li><a href="#section2">Moving Average agent</a></li></div>
-        <div><li><a href="#section3">Signal Rolling agent</a></li></div>
-        <div><li><a href="#section4">Policy Gradient agent</a></li></div>
-        <div><li><a href="#section5">Q-learning agent</a></li></div>
-        <div><li><a href="#section6">Evolution Strategy agent</a></li></div>
-        <div><li><a href="#section7">Double Q-learning agent</a></li></div>
-        <div><li><a href="#section8">Recurrent Q-learning agent</a></li></div>
-        <div><li><a href="#section9">Double Recurrent Q-learning agent</a></li></div>
-        <div><li><a href="#section10">Duel Q-learning agent</a></li></div>
-        <div><li><a href="#section11">Double Duel Q-learning agent</a></li></div>
-        <div><li><a href="#section12">Duel Recurrent Q-learning agent</a></li></div>
-        <div><li><a href="#section13">Double Duel Recurrent Q-learning agent</a></li></div>
-        <div><li><a href="#section14">Actor-critic agent</a></li></div>
-        <div><li><a href="#section15">Actor-critic Duel agent</a></li></div>
-        <div><li><a href="#section16">Actor-critic Recurrent agent</a></li></div>
-        <div><li><a href="#section17">Actor-critic Duel Recurrent agent</a></li></div>
-        <div><li><a href="#section18">Curiosity Q-learning agent</a></li></div>
-        <div><li><a href="#section19">Recurrent Curiosity Q-learning agent</a></li></div>
-        <div><li><a href="#section20">Duel Curiosity Q-learning agent</a></li></div>
-        <div><li><a href="#section21">Neuro-evoluton agent</a></li></div>
-        <div><li><a href="#section22">Neuro-evoluton with Novelty Search agent</a></li></div>
-        <div><li><a href="#section23">ABCD Strategy agent</a></li></div>
-        <div><li><a href="#section24">Deep Evolution Strategy</a></li></div>
+        <div class="grid-item"><a href="#section1">Turtle Trading agent </a></div>
+        <div class="grid-item"><a href="#section2">Moving Average agent</a></div>
+        <div class="grid-item"><a href="#section3">Signal Rolling agent</a></div>
+        <div class="grid-item"><a href="#section4">Policy Gradient agent</a></div>
+        <div class="grid-item"><a href="#section5">Q-learning agent</a></div>
+        <div class="grid-item"><a href="#section6">Evolution Strategy agent</a></div>
+        <div class="grid-item"><a href="#section7">Double Q-learning agent</a></div>
+        <div class="grid-item"><a href="#section8">Recurrent Q-learning agent</a></div>
+        <div class="grid-item"><a href="#section9">Double Recurrent Q-learning agent</a></div>
+        <div class="grid-item"><a href="#section10">Duel Q-learning agent</a></div>
+        <div class="grid-item"><a href="#section11">Double Duel Q-learning agent</a></div>
+        <div class="grid-item"><a href="#section12">Duel Recurrent Q-learning agent</a></div>
+        <div class="grid-item"><a href="#section13">Double Duel Recurrent Q-learning agent</a></div>
+        <div class="grid-item"><a href="#section14">Actor-critic agent</a></div>
+        <div class="grid-item"><a href="#section15">Actor-critic Duel agent</a></div>
+        <div class="grid-item"><a href="#section16">Actor-critic Recurrent agent</a></div>
+        <div class="grid-item"><a href="#section17">Actor-critic Duel Recurrent agent</a></div>
+        <div class="grid-item"><a href="#section18">Curiosity Q-learning agent</a></div>
+        <div class="grid-item"><a href="#section19">Recurrent Curiosity Q-learning agent</a></div>
+        <div class="grid-item"><a href="#section20">Duel Curiosity Q-learning agent</a></div>
+        <div class="grid-item"><a href="#section21">Neuro-evoluton agent</a></div>
+        <div class="grid-item"><a href="#section22">Neuro-evoluton with Novelty Search agent</a></div>
+        <div class="grid-item"><a href="#section23">ABCD Strategy agent</a></div>
+        <div class="grid-item"><a href="#section24">Deep Evolution Strategy</a></div>
         
 
         </div>
