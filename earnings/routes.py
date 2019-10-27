@@ -45,9 +45,11 @@ def ml():
 
 @app.route("/agent")
 def agent():
-    page = request.args.get('page', 1, type=int)
-    posts = Post.query.order_by(Post.date_posted.desc()).paginate(page=page, per_page=5)
-    return render_template('agent.html', posts=posts)
+    agents=['Turtle Trading agent','Moving Average agent', 'Signal Rolling agent','Policy Gradient agent','Q-learning agent','Evolution Strategy agent',
+            'Double Q-learning agent','Recurrent Q-learning agent','Double Recurrent Q-learning agent','Duel Q-learning agent','Double Duel Q-learning agent','Duel Recurrent Q-learning agent','Double Duel Recurrent Q-learning agent','Actor-critic agent','Actor-critic Duel agent',
+            'Actor-critic Recurrent agent','Actor-critic Duel Recurrent agent','Curiosity Q-learning agent','Recurrent Curiosity Q-learning agent',
+            'Duel Curiosity Q-learning agent','Neuro-evoluton agent','Neuro-evoluton with Novelty Search agent','ABCD Strategy agent','Deep Evolution Strategy']
+    return render_template('agent.html', agents=agents)
 
 
 @app.route("/about")
@@ -270,7 +272,9 @@ def industrials():
 
 @app.route("/health_care")
 def health_care():
-    return render_template('health_care.html')
+    hcs=['Life Sciences Tools & Services', 'Biotechnology', 'Health Care Technology', 'Health Care Services', 'Health Care Supplies', 
+        'Health Care Equipment', 'Managed Health Care', 'Pharmaceuticals', 'Health Care Distributors', 'Health Care Facilities']
+    return render_template('health_care.html', hcs=hcs)
 
 @app.route("/communication_services")
 def communication_services():
