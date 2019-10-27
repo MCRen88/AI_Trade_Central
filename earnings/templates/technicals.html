@@ -1,9 +1,28 @@
 {% extends "layout.html" %}
 {% block content %}
 <!-- <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='main.css') }}"> -->
-    <h3>Technical Indicators for S&P 500</h3>
+    <h3>Technical Indicator Signals</h3>
     
-    <button type="button" class="btn btn-success">Trade</button>
+    <button type="button" class="btn btn-success">Trade</button><br><br>
+
+
+    <form action="{{ url_for('technicals') }}" method="post">
+        <input type="text" name="ticker" placeholder="Enter The Ticker">
+        <button>View Charts</button>
+
+    </form>
+    <br>
+
+    {% if ticker %}
+    <h2>Technicals for Ticker: {{ticker}}</h2>
+    {% else %}
+    <h2>Technicals for Ticker: ^GSPC</h2>
+    {% endif %}
+
+
+
+
+
 
     <div class=container2>
     <div class="row">
@@ -20,11 +39,23 @@
         <div class=container1>
         {% for indicator in indicators %}
         <div id={{ loop.index }}><br><br><br>
-        <h3>Technical Indicators: {{indicator}} </h3>
+
+        {% if ticker %}  
+
+        <h3>{{ticker}} Technical Indicator: {{indicator}} </h3>
+        <img src="\static\data\technicals\{{ticker}}\{{indicator}}.png" alt="Chart" width=100% >
+
+        {% else %}
+
+        <h3>^GSPC Technical Indicator: {{indicator}} </h3>
         <img src="\static\data\technicals\^GSPC\{{indicator}}.png" alt="Chart" width=100% >
+        {% endif %}
+
+
          </div>
         {% endfor %}         
          </div>
 
 
 {% endblock content %}
+
