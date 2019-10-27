@@ -9,7 +9,7 @@
     <div class="grid">
 
      {% for agent in agents %}
-     <div class="grid-item"><a href=#section{{ loop.index }}>{{agent}}</a></div>
+     <div class="grid-item"><a href=#{{ loop.index }}>{{agent}}</a></div>
            
      {% endfor %}
     </div>
