@@ -334,8 +334,11 @@ def agent():
             'Double Q-learning agent','Recurrent Q-learning agent','Double Recurrent Q-learning agent','Duel Q-learning agent','Double Duel Q-learning agent','Duel Recurrent Q-learning agent','Double Duel Recurrent Q-learning agent','Actor-critic agent','Actor-critic Duel agent',
             'Actor-critic Recurrent agent','Actor-critic Duel Recurrent agent','Curiosity Q-learning agent','Recurrent Curiosity Q-learning agent',
             'Duel Curiosity Q-learning agent','Neuro-evoluton agent','Neuro-evoluton with Novelty Search agent','ABCD Strategy agent','Deep Evolution Strategy']
-    ticker = request.form.get("ticker")
+    if request.method == 'GET':
+        return render_template('agent.html', agents=agents)
 
-    return render_template('agent.html', agents=agents, ticker=ticker)
+    else:
+        ticker = request.form.get("ticker")
+        return render_template('agent.html', agents=agents, ticker=ticker)
 
 
