@@ -14,9 +14,9 @@
     <br>
 
     {% if ticker %}
-    <h2>Technicals for Ticker: {{ticker}}</h2>
+        <h2>Technicals for Ticker: {{ticker}}</h2>
     {% else %}
-    <h2>Technicals for Ticker: ^GSPC</h2>
+        <h2>Technicals for Ticker: ^GSPC</h2>
     {% endif %}
 
 
@@ -42,13 +42,13 @@
 
         {% if ticker %}  
 
-        <h3>{{ticker}} Technical Indicator: {{indicator}} </h3>
-        <img src="\static\data\technicals\{{ticker}}\{{indicator}}.png" alt="Chart" width=100% >
+            <h3>{{ticker}} Technical Indicator: {{indicator}} </h3>
+            <img src="\static\data\technicals\{{ticker}}\{{indicator}}.png" alt="Chart" width=100% >
 
         {% else %}
 
-        <h3>^GSPC Technical Indicator: {{indicator}} </h3>
-        <img src="\static\data\technicals\^GSPC\{{indicator}}.png" alt="Chart" width=100% >
+            <h3>^GSPC Technical Indicator: {{indicator}} </h3>
+            <img src="\static\data\technicals\^GSPC\{{indicator}}.png" alt="Chart" width=100% >
         {% endif %}
 
 

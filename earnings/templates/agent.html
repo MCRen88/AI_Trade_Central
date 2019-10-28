@@ -9,15 +9,15 @@
 
     <form action="{{ url_for('agent') }}" method="post">
         <input type="text" name="ticker" placeholder="Enter The Ticker">
-        <button>Submit</button>
+        <button>View Charts</button>
 
     </form>
     <br>
 
     {% if ticker %}
-    <h2>Agents for Ticker: {{ticker}}</h2>
+        <h2>Agents for Ticker: {{ticker}}</h2>
     {% else %}
-    <h2>Agents for Ticker: ^GSPC</h2>
+        <h2>Agents for Ticker: ^GSPC</h2>
     {% endif %}
 
 
@@ -36,13 +36,13 @@
 
         {% if ticker %}
 
-        <h3>{{ticker}} {{agent}} </h3>
-        <img src="\static\data\agent\{{ticker}}\^GSPC{{agent}}.png" alt="Chart" width=100% >
+            <h3>{{ticker}} {{agent}} </h3>
+            <img src="\static\data\agent\{{ticker}}\^GSPC{{agent}}.png" alt="Chart" width=100% >
 
         {% else %}
 
-        <h3>^GSPC {{agent}} </h3>
-        <img src="\static\data\agent\^GSPC\^GSPC{{agent}}.png" alt="Chart" width=100% >
+            <h3>^GSPC {{agent}} </h3>
+            <img src="\static\data\agent\^GSPC\^GSPC{{agent}}.png" alt="Chart" width=100% >
 
 
         {% endif %}
